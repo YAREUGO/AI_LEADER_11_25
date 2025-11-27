@@ -1,0 +1,873 @@
+[00:00:04.701] Server  LOG      ✓ Ready in 3.2s
+[00:00:08.583] Server  ERROR    ⨯ ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+
+./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+
+./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:00:12.185] Browser ERROR   uncaughtError: Error: ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:00:12.380] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:00:12.380] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.380] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.380] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:00:12.380] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:00:12.380] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:13.275] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:13.275] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:13.275] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:28.627] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:28.627] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:28.627] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.283] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:31.283] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.283] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.455] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:31.455] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.455] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.658] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:31.658] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.658] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.658] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:31.658] Browser ERROR   ./components/map/CafeMap.tsx:5:1
+Module not found: Can't resolve 'leaflet'
+  3 | import { useEffect, useRef } from 'react';
+  4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+> 5 | import L from 'leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+  8 |
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:31.658] Browser ERROR   ./components/map/CafeMap.tsx:4:1
+Module not found: Can't resolve 'react-leaflet'
+  2 |
+  3 | import { useEffect, useRef } from 'react';
+> 4 | import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  5 | import L from 'leaflet';
+  6 | import { Cafe } from '@/lib/types';
+  7 | import { cn } from '@/lib/utils';
+
+Import trace:
+  Client Component Browser:
+    ./components/map/CafeMap.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+https://nextjs.org/docs/messages/module-not-found
+[00:01:33.121] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:38.047] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:39.191] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:40.261] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:46.079] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:01:55.233] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:06.670] Server  ERROR    ⨯ ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:02:06.850] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:08.850] Browser ERROR   uncaughtError: Error: ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+
+
+[00:02:09.137] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:09.217] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:09.217] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:59.207] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:59.207] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:59.486] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:59.486] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:02:59.932] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:00.479] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:00.708] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:01.488] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:04.113] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:04.483] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:04.731] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:04.731] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:05.491] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:05.491] Browser ERROR   ./app/globals.css
+Error evaluating Node.js code
+CssSyntaxError: tailwindcss: D:\AI LEADER_coding play\ai_leader_11_25\app\globals.css:1:1: Can't resolve 'leaflet/dist/leaflet.css' in 'D:\AI LEADER_coding play\ai_leader_11_25\app'
+    [at Input.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/input.js:135:16)]
+    [at Root.error (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/node.js:146:32)]
+    [at Object.Once (D:\AI LEADER_coding play\ai_leader_11_25\node_modules\.pnpm\@tailwindcss+postcss@4.1.17\node_modules\@tailwindcss\postcss\dist\index.js:10:6912)]
+    [at process.processTicksAndRejections (node:internal/process/task_queues:105:5)]
+    [at async LazyResult.runAsync (turbopack:///[project]/node_modules/.pnpm/postcss@8.5.6/node_modules/postcss/lib/lazy-result.js:293:11)]
+    [at async transform (turbopack:///[turbopack-node]/transforms/postcss.ts:70:34)]
+    [at async run (turbopack:///[turbopack-node]/ipc/evaluate.ts:92:23)]
+
+Import trace:
+  Client Component Browser:
+    ./app/globals.css [Client Component Browser]
+    ./app/layout.tsx [Server Component]
+[00:03:19.156] Server  LOG      ✓ Compiled in 739ms
+[00:03:20.592] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:03:21.701] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:31.375] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:14.058] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:07:24.644] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:44.051] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:13:21.070] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

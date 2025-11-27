@@ -1,0 +1,10 @@
+{
+  "[project]/components/map/CafeMap.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/map/CafeMap.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules__pnpm_629ec5d0._.js",
+      "static/chunks/components_map_CafeMap_tsx_ce6cd33d._.js",
+      "static/chunks/components_map_CafeMap_tsx_e0056620._.js"
+    ]
+  }
+}
