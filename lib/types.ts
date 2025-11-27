@@ -12,5 +12,3 @@ export type Cafe = {
   ownerRule: string; // 예: "3시간 이용 시 재주문 필수"
   isOpenLate: boolean; // 22시 이후 영업 여부
 };
-
-
